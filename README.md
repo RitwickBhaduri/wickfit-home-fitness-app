@@ -1,47 +1,33 @@
-# WickFit — Personal Calisthenics Trainer
+# WickFit 🏋️
 
-Your personal home workout app. 4-day calisthenics programme, personalised for you.
+Your personal calisthenics & home workout trainer. Built for one user — you.
 
-## Deploy Free on Vercel (Recommended)
+## Deploy to GitHub + Vercel (Free)
 
-1. Go to https://vercel.com and sign up (free)
-2. Click "Add New Project"
-3. Choose "Upload" (drag and drop this folder)
-4. Click Deploy — done! You'll get a URL like `wickfit.vercel.app`
+### Step 1 — GitHub
+1. Go to github.com → New repository → name it `wickfit` → Public → Create
+2. Upload all files from this folder (drag & drop on the GitHub page)
+3. Commit with message: `Initial WickFit release`
 
-## Deploy Free on Netlify (Alternative)
+### Step 2 — Vercel
+1. Go to vercel.com → Sign in with GitHub
+2. Add New Project → Import `wickfit` repo
+3. No settings to change → Deploy
+4. Live at: `https://wickfit-[username].vercel.app`
 
-1. Go to https://netlify.com and sign up (free)
-2. Drag this entire folder onto the Netlify dashboard
-3. Done — instant URL
-
-## Deploy Free on GitHub Pages
-
-1. Create a free GitHub account at https://github.com
-2. Create a new repository named `wickfit`
-3. Upload all files in this folder
-4. Go to Settings → Pages → Source: main branch
-5. Your app will be at `https://yourusername.github.io/wickfit`
-
-## Install as PWA on your phone
-
-1. Open your deployed URL in Chrome (Android) or Safari (iOS)
-2. **Android**: Tap the 3-dot menu → "Add to Home Screen"
-3. **iOS**: Tap the Share button → "Add to Home Screen"
-4. WickFit icon appears on your home screen — works like a native app!
-
-## Data Storage
-
-All your progress is saved locally in your browser (localStorage).
-- Survives app close, phone restart ✓
-- Does NOT sync across devices
-- Clearing browser data will reset progress
+### Step 3 — Install as PWA
+- **Android:** Open in Chrome → 3-dot menu → Add to Home Screen
+- **iOS:** Open in Safari → Share → Add to Home Screen
 
 ## Files
+| File | Purpose |
+|------|---------|
+| `index.html` | Complete app (single file) |
+| `manifest.json` | PWA name, icons, theme |
+| `sw.js` | Offline service worker |
+| `icon-192.png` | Home screen icon |
+| `icon-512.png` | Splash screen icon |
+| `vercel.json` | Deployment headers |
 
-- `index.html` — The entire app (single file PWA)
-- `manifest.json` — PWA metadata (name, icons, theme)
-- `sw.js` — Service Worker for offline support
-- `icon-192.png` — App icon (home screen)
-- `icon-512.png` — App icon (splash screen)
-- `vercel.json` — Vercel deployment config
+## Data
+All progress stored in browser localStorage — no login, no backend, no cost.
